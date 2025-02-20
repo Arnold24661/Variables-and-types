@@ -16,9 +16,14 @@ public class MusicBox {
     public MusicBox(String songID, char premiumSong, String title, String artists, String Album, String genre, String producer, String label) {
         this.songID = songID;
         this.isSongPremium = premiumSong;
+        this.songTitle = title;
         this.songArtists = artists;
-        
-        // -- TODO
+        this.songAlbum = Album;
+        this.songGenre = genre;
+        this.songProducer = producer;
+        this.songMusicLabel = label;
+
+        // --
         /* Initialise  the rest of the variables in this Constructor block*/
     }
     
@@ -32,11 +37,33 @@ public class MusicBox {
         return songArtists;
     }
 
+    public String getSongTitle() {
+        return songTitle;
+    }
+
     public char getPremiumSong() {
         return isSongPremium;
     }
 
-    // -- TODO
+    public String getSongAlbum() {
+        return songAlbum;
+    }
+
+    public String getSongGenre(){
+        return songGenre;
+    }
+
+    public String getStringProducer(){
+        return songProducer;
+    }
+
+    public String getSongMusicLable(){
+        return songMusicLabel;
+    }
+
+    
+
+    // --
         /* Create the rest of "getters" for the remaining variables */
     
         /* The following method is complete. You don't have to do anything here. Just try to understand it. */
